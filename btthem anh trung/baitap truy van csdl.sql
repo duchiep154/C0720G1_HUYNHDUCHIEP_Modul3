@@ -64,3 +64,8 @@ select * from orders where orders.address_receiver like "Hà Nội";
  
  select * from suppliers where suppliers.name IN('Yamaha','SamSung','Nestle','Apple');
  
+ -- D TRUY VẤN DỮ LIỆU: INNER JOIN, VIEW, STORED PROCEDURE
+ -- Hiển thị tất cả các mặt hàng cùng với CategoryName
+ select * from products join categories on products.product_id=categories.category_id;
+
+ 
