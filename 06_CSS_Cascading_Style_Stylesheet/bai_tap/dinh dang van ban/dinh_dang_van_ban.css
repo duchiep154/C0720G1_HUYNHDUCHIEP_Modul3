@@ -1,0 +1,18 @@
+h1 {
+    text-align: center;
+}
+
+p {
+    letter-spacing: 2px;
+    line-height: 20px;
+    text-indent:50px;
+    font-size: larger;
+    font-family: "Times New Roman";
+    /*font-weight: unset; : In đậm*/
+    /*user-select: contain; :  Bôi đen */
+}
+
+a{
+    margin-left: 670px;
+    text-decoration: none;
+}

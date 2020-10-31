@@ -92,6 +92,31 @@ Học viên sử dụng theo 3 cách khác nhau để thực hiện yêu cầu t
 SELECT DISTINCT  khachhang.ten_KhachHang 
 from khachhang;
 
+-- cach 2
+
+SELECT khachhang.ten_KhachHang
+from khachhang
+GROUP BY ten_KhachHang;
+
+-- cach 3 
+SELECT ten_KhachHang
+from khachhang
+UNION
+SELECT ten_KhachHang
+from khachhang;
+
+/* task 9 Thực hiện thống kê doanh thu theo tháng, 
+nghĩa là tương ứng với mỗi tháng trong năm 2019 thì sẽ có bao nhiêu khách hàng thực hiện đặt phòng */
+
+SELECT month(ngay_lam_HopDong) as 'thang' ,count(id_HopDong) as 'soHopDong' 
+FROM hopdong
+GROUP BY ngay_lam_HopDong
+HAVING year(ngay_lam_HopDong)=2019;
+
+
+
+           
+
 
 
 
