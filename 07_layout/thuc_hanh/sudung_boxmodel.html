@@ -2,9 +2,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>sudung_boxmodel</title>
-</head>
-<body>
+    <title>Sử dụng Boxmodel</title>
 
-</body>
+    <!-- Bước 2: Nhúng CSS định dạng hiển thị của thẻ div
+        Tạo class có tên boxmodel cho thẻ div: -->
+
+
+    <style>
+        .boxmodel{
+            margin: 0 auto;
+            width: 800px;
+            border: 10px;
+            padding: 10px;
+            border-color: chartreuse aqua blue blueviolet;
+            border-style: solid;
+        }
+        .boxmodel p{
+            border: 3px dotted darkred;
+            padding: 10px;
+        }
+        #boxmodel1{
+            margin-bottom: 20px;
+        }
+        #boxmodel2{
+            margin-bottom: 40px;
+        }
+        #boxmodel3{
+            margin-bottom: 60px;
+        }
+
+    </style>
+
+</head>
+    <!-- Lần lượt tiến hành theo các bước hướng dẫn sau đây:
+    Bước 1: Tạo tài liệu mới html gồm đầy đủ các phần head, body. Trong body có sử dụng các thẻ div, p như sau:-->
+    <body>
+        <div class="boxmodel">
+            <p id="boxmodel1">Mô hình hộp trong CSS về cơ bản là một hộp bao quanh phần tử HTML.
+            Nó bao gồm: lề (margin), viền (border), phần đệm (padding) và nội dung (content)</p>
+            <p id="boxmodel2">Mô hình hộp trong CSS về cơ bản là một hộp bao quanh phần tử HTML.
+            Nó bao gồm: lề (margin), viền (border), phần đệm (padding) và nội dung (content)</p>
+            <p id="boxmodel3">Mô hình hộp trong CSS về cơ bản là một hộp bao quanh phần tử HTML.
+            Nó bao gồm: lề (margin), viền (border), phần đệm (padding) và nội dung (content)</p>
+        </div>
+
+    </body>
 </html>

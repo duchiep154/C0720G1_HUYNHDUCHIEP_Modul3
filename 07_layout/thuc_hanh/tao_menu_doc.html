@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>taomenudoc</title>
+    <style>
+
+        /*Để tránh có sự khác biệt giữa các trình duyệt, chúng ta bổ sung đoạn mã CSS sau.
+         Các bộ chọn (selector) này đặt cố định loại font chữ cho tài liệu và đặt các thuộc tính căn lề cho khung
+         và cho nội dung của các danh sách, phần tử trong danh sách (ul, li).*/
+        body{
+            font-family: Arial;
+        }
+        #menu, #menu ul, #menu li{
+            padding:0;
+            margin:0;
+        }
+        /*Chúng ta tiếp tục bổ sung bộ chọn với các thuộc tính sau cho các phần tử trong danh sách (li).*/
+        /* list-style:  none; Bỏ đi các ký hiệu đánh dấu đầu mỗi phần tử của*/
+        /* danh sách (bullet).*/
+        /* position: relative; Cho phép các danh sách con được đặt cạnh phần tử chứa nó*/
+        /*(phần tử của danh sách ngoài)*/
+        /*width:100px; và height: 30px; Cố định chiều rộng và chiều cao*/
+        /*                              của một phần tử trong danh sách.*/
+        /*padding:0 20px; Cố định lề trái (left) và phải (right) dành cho các nội dung bên trong phần*/
+        /*                tử danh sách (li) với khung viền của nó.*/
+        /* background-color: black;  Đổi màu nền sang mà đen cho tất cả các phần tử trong danh*/
+        /*                     sách.*/
+        /* line-height: 30px; Cố định chiều cao cho mỗi dòng văn bản trong phần tử của danh sách.*/
+        /* cursor: pointer; chuyển biểu tượng của con trỏ màn hình sang hình bàn tay.*/
+
+        #menu li{
+            list-style: none;
+            position: relative;
+            width:100px;
+            height: 30px;
+            padding:0 20px;
+            background-color: black;
+            line-height: 30px;
+            cursor:pointer;
+        }
+
+        /*Chúng ta tiếp tục định nghĩa thêm một bộ chọn mới dành cho các liên kết bên trong các danh sách (thẻ a);
+         bộ chọn này gồm các mô tả sau: text-decoration: none; dùng để bỏ các gạch chân của liên kết và color: white;
+         dùng để đổi màu liên kết sang màu trắng:*/
+
+        #menu li a{
+            text-decoration:none;
+            color: white;
+        }
+
+        /*Để mỗi khi chúng ta đưa chuột qua các phần tử của danh sách (giờ là mục chọn trong trình đơn)
+        màu nền của chúng bị thay đổi, thì chúng ta cần định nghĩa một bộ chọn như sau:*/
+
+        #menu li:hover{
+            background-color:red;
+        }
+
+        /*Bộ chọn tiếp theo sẽ dành cho các danh sách con (danh sách bên trong một phần tử của danh sách khác),
+        mô tả position: absolute; cho phép cố định vị trí xuất hiện của các danh sách con,
+        mô tả top: 0; và left: 160px; xác định vị trí góc trên trái của khung chứa danh sách con (so với vị trí của phần tử chứa danh sách này),
+        mô tả visibility: hidden; sẽ ẩn làm các danh sách con.*/
+        #menu ul ul{
+            position: absolute;
+            top:0;
+            left:140px;
+            visibility:hidden;
+        }
+
+        /*Cuối cùng, chúng ta thêm một bộ chọn dành cho các danh sách con khi phần tử của danh sách ngoài bị đưa con trỏ qua
+        . Bộ chọn này sẽ cho phép danh sách con tương ứng của phần tử đó được hiển thị lên.*/
+
+        #menu ul li:hover ul{
+            visibility:visible;
+        }
+    </style>
+</head>
+<body>
+<h3>ACCP i10</h3>
+<div id="menu">
+    <ul>
+        <li><a href="#">Sem 1</a>
+            <ul>
+                <li><a href="#">Computing Fundametal</a></li>
+                <li><a href="#">C Programming</a></li>
+                <li><a href="#">Building Dynamic Website</a></li>
+                <li><a href="#">MS Transact-SQL</a></li>
+                <li><a href="#">Project</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Sem 2 </a>
+            <ul>
+                <li><a href="#">Cloud Computing</a></li>
+                <li><a href="#">APJ - I</a></li>
+                <li><a href="#">APJ - II</a></li>
+                <li><a href="#">APJ - III</a></li>
+                <li><a href="#">eProject</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Sem 3</a></li>
+        <li><a href="#">Sem 4</a></li>
+    </ul>
+</div>
+
+</body>
+</html>
