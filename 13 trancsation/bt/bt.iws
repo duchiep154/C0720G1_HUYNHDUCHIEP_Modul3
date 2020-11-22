@@ -24,7 +24,38 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a7915ed5-a3c7-4ce3-9442-e4da955f9d6d" name="Default Changelist" comment="" />
+    <list default="true" id="a7915ed5-a3c7-4ce3-9442-e4da955f9d6d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_FURAMA_3/webfurama/src/model/AttachService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_FURAMA_3/webfurama/src/model/Contract.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_FURAMA_3/webfurama/src/model/ContractDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_FURAMA_3/webfurama/src/model/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_FURAMA_3/webfurama/src/model/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_FURAMA_3/webfurama/src/model/Service.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_FURAMA_3/webfurama/src/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_FURAMA_3/webfurama/web/WEB-INF/images/bg-01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_FURAMA_3/webfurama/web/WEB-INF/images/icons/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_FURAMA_3/webfurama/web/WEB-INF/images/icons/icon-google.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_FURAMA_3/webfurama/web/WEB-INF/images/icons/map-marker.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_FURAMA_3/webfurama/web/WEB-INF/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_FURAMA_3/webfurama/web/WEB-INF/lib/javax.annotation.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_FURAMA_3/webfurama/web/WEB-INF/lib/javax.ejb.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_FURAMA_3/webfurama/web/WEB-INF/lib/javax.jms.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_FURAMA_3/webfurama/web/WEB-INF/lib/javax.persistence.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_FURAMA_3/webfurama/web/WEB-INF/lib/javax.resource.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_FURAMA_3/webfurama/web/WEB-INF/lib/javax.servlet.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_FURAMA_3/webfurama/web/WEB-INF/lib/javax.servlet.jsp.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_FURAMA_3/webfurama/web/WEB-INF/lib/javax.servlet.jsp.jstl.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_FURAMA_3/webfurama/web/WEB-INF/lib/javax.transaction.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_FURAMA_3/webfurama/web/WEB-INF/lib/jstl-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_FURAMA_3/webfurama/web/WEB-INF/lib/mysql-connector-java-8.0.17.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ideaDataSources/e5fd5406-98cb-4c5c-984d-5fc3d280aee9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.ideaDataSources/e5fd5406-98cb-4c5c-984d-5fc3d280aee9.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bt.iws" beforeDir="false" afterPath="$PROJECT_DIR$/bt.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bt_war_exploded/WEB-INF/classes/controller/StudentServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bt_war_exploded/WEB-INF/classes/controller/StudentServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bt_war_exploded/student/create.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bt_war_exploded/student/create.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bt_war_exploded/student/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bt_war_exploded/student/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/bt/controller/StudentServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bt/controller/StudentServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/student/create.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/student/create.jsp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,7 +94,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/master/master/Module3/case_study_1/furama_resort" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -169,6 +200,15 @@
       <workItem from="1604990272753" duration="11412000" />
       <workItem from="1605005561101" duration="116000" />
       <workItem from="1605007112591" duration="183000" />
+      <workItem from="1605007449985" duration="44000" />
+      <workItem from="1605084357427" duration="52000" />
+      <workItem from="1605084416668" duration="808000" />
+      <workItem from="1605086967625" duration="84000" />
+      <workItem from="1605089238169" duration="296000" />
+      <workItem from="1605092406160" duration="62000" />
+      <workItem from="1605167971473" duration="1218000" />
+      <workItem from="1605182329013" duration="8000" />
+      <workItem from="1605201578571" duration="37000" />
     </task>
     <servers />
   </component>
@@ -192,10 +232,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="249" y="0" key="#Project_Structure/0.0.1536.834@0.0.1536.834" timestamp="1604994959681" />
-    <state x="223" y="72" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605000063492">
+    <state x="223" y="72" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605168340188">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="223" y="72" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834@0.0.1536.834" timestamp="1605000063492" />
+    <state x="223" y="72" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834@0.0.1536.834" timestamp="1605168340188" />
     <state x="574" y="133" key="#com.intellij.ide.util.MemberChooser" timestamp="1604992460659">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -204,26 +244,26 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="147" y="65" key="DiffContextDialog/0.0.1536.834@0.0.1536.834" timestamp="1605007196973" />
-    <state x="548" y="172" key="FileChooserDialogImpl" timestamp="1604979561090">
+    <state x="548" y="172" key="FileChooserDialogImpl" timestamp="1605092465558">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="548" y="172" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1604979561090" />
-    <state width="1024" height="618" key="GridCell.Tab.0.bottom" timestamp="1605001828384">
+    <state x="548" y="172" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1605092465558" />
+    <state width="501" height="158" key="GridCell.Tab.0.bottom" timestamp="1605168719486">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1024" height="618" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1605001828384" />
-    <state width="1024" height="618" key="GridCell.Tab.0.center" timestamp="1605001828384">
+    <state width="501" height="158" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1605168719486" />
+    <state width="501" height="158" key="GridCell.Tab.0.center" timestamp="1605168719486">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1024" height="618" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1605001828384" />
-    <state width="1024" height="618" key="GridCell.Tab.0.left" timestamp="1605001828384">
+    <state width="501" height="158" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1605168719486" />
+    <state width="501" height="158" key="GridCell.Tab.0.left" timestamp="1605168719486">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1024" height="618" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1605001828384" />
-    <state width="1024" height="618" key="GridCell.Tab.0.right" timestamp="1605001828384">
+    <state width="501" height="158" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1605168719486" />
+    <state width="501" height="158" key="GridCell.Tab.0.right" timestamp="1605168719486">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1024" height="618" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1605001828384" />
+    <state width="501" height="158" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1605168719486" />
     <state width="1024" height="618" key="GridCell.Tab.1.bottom" timestamp="1605001828384">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -256,10 +296,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1024" height="618" key="GridCell.Tab.2.right/0.0.1536.834@0.0.1536.834" timestamp="1605001828384" />
-    <state x="549" y="119" key="RollbackChangesDialog" timestamp="1605007213994">
+    <state x="549" y="119" key="RollbackChangesDialog" timestamp="1605084388303">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="549" y="119" key="RollbackChangesDialog/0.0.1536.834@0.0.1536.834" timestamp="1605007213994" />
+    <state x="549" y="119" key="RollbackChangesDialog/0.0.1536.834@0.0.1536.834" timestamp="1605084388303" />
     <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1605007146155">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -268,6 +308,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="578" y="331" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.834@0.0.1536.834" timestamp="1605007274576" />
+    <state x="209" y="0" key="new project wizard" timestamp="1605007492523">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="209" y="0" key="new project wizard/0.0.1536.834@0.0.1536.834" timestamp="1605007492523" />
     <state x="425" y="189" key="run.anything.popup" timestamp="1604980969887">
       <screen x="0" y="0" width="1536" height="834" />
     </state>

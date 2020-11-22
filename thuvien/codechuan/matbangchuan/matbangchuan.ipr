@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactManager">
+    <artifact type="exploded-war" name="matbangchuan:war exploded">
+      <output-path>$PROJECT_DIR$/out/artifacts/matbangchuan_war_exploded</output-path>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="matbangchuan/web/Web" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="matbangchuan" />
+          </element>
+          <element id="directory" name="lib">
+            <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/libs/jstl-1.2.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/libs/jstl-api-1.2.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/libs/jstl-impl-1.2.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/libs/mysql-connector-java-8.0.17.jar" />
+          </element>
+        </element>
+      </root>
+    </artifact>
+  </component>
+  <component name="InspectionProjectProfileManager">
+    <profile version="1.0">
+      <option name="myName" value="Project Default" />
+    </profile>
+    <version value="1.0" />
+  </component>
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/matbangchuan.iml" filepath="$PROJECT_DIR$/matbangchuan.iml" />
+    </modules>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

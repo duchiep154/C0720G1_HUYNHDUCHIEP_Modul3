@@ -13,8 +13,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
 </head>
@@ -28,12 +28,12 @@
 
 </div>
 
-<div style="margin: 20px" class="row">
+<div style="margin-bottom: 10px" class="row">
 <%--    <div class="col-md-6">--%>
 <%--        <a href="/users?action=create" role="button" class="btn btn-outline-dark">Create New User</a>--%>
 <%--    </div>--%>
     <div class="col-md-6">
-        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modelCreate" >
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modelcreate" >
             Create New User
         </button>
         <%--        <a href="/users?action=create" role="button" class="btn btn-outline-dark">Create New User</a>--%>
@@ -63,45 +63,38 @@
             <input type="submit" value="sort" name="action" class="btn btn-outline-dark">
         </form>
     </div>
-
 </div>
-<div style="margin: 20px">
-    <table class="table table-sm table-bordered table-hover">
-        <thead class="thead-dark">
+<table class="table table-sm table-bordered table-hover">
+    <thead class="thead-dark">
+    <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Country</th>
+        <th scope="col">Edit</th>
+        <th scope="col">Delete</th>
+    </tr>
+    </thead>
+    <tbody>
+    <c:forEach items='${requestScope["listUser"]}' var="user">
         <tr>
-            <th scope="col">Id</th>
-            <th scope="col">Name</th>
-            <th scope="col">Email</th>
-            <th scope="col">Country</th>
-            <th scope="col">Edit</th>
-            <th scope="col">Delete</th>
+            <td scope="row"><c:out value="${user.id}"/></td>
+            <td><c:out value="${user.name}"/></td>
+            <td><c:out value="${user.email}"/></td>
+            <td><c:out value="${user.country}"/></td>
+            <td><a class="btn btn-warning" href="/users?action=edit&id=${user.id}">edit</a></td>
+            <td>
+<%--                <a  class="btn btn-danger" href="/users?action=delete&id=${user.id}">delete</a>--%>
+    <button type="button" class="btn btn-primary ml-2" onclick="deleteid(${user.id})" data-toggle="modal" data-target="#modeldelete">Delete</button>
+            </td>
         </tr>
-        </thead>
-        <tbody>
-        <c:forEach items='${requestScope["listUser"]}' var="user">
-            <tr>
-                <td scope="row"><c:out value="${user.id}"/></td>
-                <td scope="row"><c:out value="${user.name}"/></td>
-                <td scope="row"><c:out value="${user.email}"/></td>
-                <td scope="row"><c:out value="${user.country}"/></td>
-                <td scope="row">
-                    <button type="button" class="btn btn-warning ml-2" onclick="editId(${user.id},'${user.name}','${user.email}','${user.country}')" data-toggle="modal" data-target="#modelEdit" > edit</button>
-                </td>
-                <td scope="row">
-                        <%--                <a  class="btn btn-danger" href="/users?action=delete&id=${user.id}">delete</a>--%>
-                    <button type="button" class="btn btn-danger ml-2" onclick="deleteId(${user.id})" data-toggle="modal" data-target="#modeldelete">
-                        Delete
-                    </button>
-                </td>
-            </tr>
-        </c:forEach>
-        </tbody>
-    </table>
-</div>
 
 
-<!-- Modal create -->
-<div class="modal fade" id="modelCreate" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+    </c:forEach>
+    </tbody>
+</table>
+<!-- Modal -->
+<div class="modal fade" id="modelcreate" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -110,34 +103,44 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <form action="/users" method="post">
-                <div class="modal-body">
-                    <div class="form-group ">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" class="form-control" name="name">
-                    </div>
-                    <div class="form-group ">
-                        <label for="email">Email</label>
-                        <input type="text" id="email" class="form-control" name="email">
-                    </div>
-                    <div class="form-group ">
-                        <label for="country">country</label>
-                        <input type="text" id="country" class="form-control" name="country">
-                    </div>
-                </div>
-                <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-<%--                        <input type="hidden" name="action" value="create">--%>
-                        <button type="submit"  class="btn btn-primary" name="action" value="create">create user</button>
-                </div>
-            </form>
+            <div class="modal-body">
+                <form action="/create.jsp" method="post">
+                    <fieldset>
+                        <legend>Create New User</legend>
+                        <div class="form-group ">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" class="form-control" name="name">
+                        </div>
+
+                        <div class="form-group ">
+                            <label for="email">Email</label>
+                            <input type="text" id="email" class="form-control" name="email">
+                        </div>
+
+                        <div class="form-group ">
+                            <label for="country">country</label>
+                            <input type="text" id="country" class="form-control" name="country">
+                        </div>
+
+                        <div class="form-group ">
+                            <input type="submit" role="button" class="btn btn-outline-dark">
+                            <a role="button" class="btn btn-outline-dark" href="/users">Back</a>
+                        </div>
+                    </fieldset>
+                </form>
+
+            </div>
+
         </div>
     </div>
 </div>
 
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modeldelete">
+    delete
+</button>
 
-
-<!-- Modal delete-->
+<!-- Modal -->
 <div class="modal fade" id="modeldelete" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -161,71 +164,14 @@
         </div>
     </div>
 </div>
-<!-- Button trigger modal -->
-
-
-<!-- Modal edit-->
-<div class="modal fade" id="modelEdit" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">edit user</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-
-            </div>
-            <form action="/users"  method="post">
-                <div class="modal-body">
-
-                    <div class="form-group ">
-
-                            <input type="hidden" id="updateId" name="id" value=""/>
-
-                    </div>
-                    <div class="form-group ">
-                            <label for="updateName">Name</label>
-                            <input type="text" class="form-control" id="updateName"  name="name" value=""/>
-
-                    </div>
-                    <div class="form-group ">
-                            <label for="updateEmail">Email</label>
-                            <input type="text" id="updateEmail" class="form-control" name="email"/>
-                    </div>
-                    <div class="form-group ">
-                            <label for="updateCountry">Address</label>
-                            <input type="text" id="updateCountry" class="form-control" name="country"/>
-                    </div>
-                 </div>
-                 <div class="modal-footer">
-                   <button type="button" class="btn btn-secondary" data-dismiss="modal">
-                       Close
-                   </button>
-                   <button  class="btn btn-primary" name="action" value="edit">
-                       Edit
-                   </button>
-                 </div>
-
-            </form>
-
-        </div>
-    </div>
-</div>
 
 </body>
 <script>
-    function deleteId(id) {
-        console.log(id);
-        document.getElementById("modalId").value = id;
-    }
-    function editId(id,name,email,country) {
-        console.log(id,name,email,country);
-        document.getElementById("updateId").value = id;
-        document.getElementById("updateName").value = name;
-        document.getElementById("updateEmail").value = email;
-        document.getElementById("updateCountry").value =country;
-    }
+    function deleteid(id) {
 
+        document.getElementById("modalId").value = id;
+
+    }
 </script>
 
 </html>

@@ -21,10 +21,14 @@
 <form class="was-validated" method="post">
     <fieldset>
         <legend>Update Information</legend>
-        <input type="hidden" name="id" value="<c:out value='${user.id}' />"/>
         <div class="form-group col-md-4">
-            <label for="name2">Name</label>
-            <input type="text" class="form-control" id="name2" placeholder="Enter name" name="name" size="45"
+            <c:if test="${user != null}">
+                <input type="hidden" name="id" value="<c:out value='${user.id}' />"/>
+            </c:if>
+        </div>
+        <div class="form-group col-md-4">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter name" name="name" size="45"
                    value="<c:out value='${user.name}' />"   required
             />
             <div class="valid-feedback">Valid.</div>
@@ -33,8 +37,8 @@
         </div>
 
         <div class="form-group col-md-4">
-            <label for="email2">Email</label>
-            <input type="text" id="email2" class="form-control" name="email" placeholder="Enter email" size="45"
+            <label for="email">Email</label>
+            <input type="text" id="email" class="form-control" name="email" placeholder="Enter email" size="45"
                    value="<c:out value='${user.email}' />" required
             />
             <div class="valid-feedback">Valid.</div>

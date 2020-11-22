@@ -1,0 +1,152 @@
+Module 3 - Database
+1	Phân biệt các câu lệnh DML & DDL? DML, DDL bao gồm các câu lệnh nào?
+	-DDL dùng để định nghĩa dữ liệu.
+	create, drop, truncate, alter
+
+	-DML dùng để thao tác dữ liệu
+	delete, insert, update
+2	Cơ sở dữ liệu (database) là gì?
+	-Là nhóm lưu trữ dữ liệu có tổ chức, theo mô hinh đối tượng, quan hệ, phân cấp
+
+3	Trình bày về mô hình thực thể mối quan hệ (ERD - Entity-Relationship Diagram)? Trong mô hình thực thể mối quan hệ có những thành phần nào?
+	Mô hình: Thực tế =>mô hình E-R=> Mô hình CSDL quan hệ=>DB
+
+	E-R:
+	gồm thực thể(tên ), thuộc tính(kiểu dữ liệu), mối quan hệ(quan hệ giữa các bảng với nhau, khóa chính, phụ). Lượt đồ [Tên tập thực thể(tên table)]=>[Tên thuộc tính(vd: ten, ngsinh, gioi tinh...)]=>[Tên quan hệ(khóa chính phụ)]
+
+4	Các bước chuyển đổi từ ERD -> Table?
+	Xác định tên database, số bảng bằng số lượng tập thực thể, thuộc tính trong bảng, kiểu dữ liệu của thuộc tính, mối quan hệ giữa các bảng, loại bỏ 2 bảng có mỗi quan hệ n-n bằng bảng trung gian.
+
+5	Các bước chuẩn hóa dữ liệu?
+	1NF: loại bỏ các thuộc tính tính toán.
+	2NF: Loại bỏ các thuộc tính phụ thuộc, tách 1 1 bảng thành nhiều bảng, trong đó có 1 bảng chính và nhiều bảng phụ. trong bảng chính có khóa chính của bảng phụ.
+(để lại các mối quan hệ 1-1, 1-n nhưng loại bỏ mối quan hệ n-n bằng bảng trung gian)
+	3NF: Loại bỏ mối quan hệ bắt cầu
+
+6	Ràng buộc (constraint) là gì? Các loại ràng buộc trong MySQL?
+	-Là quy tắc áp dụng cho bản.
+	-Các rằng buộc như: khóa chính, phụ, unque, default, not null, check
+	
+7	Khóa chính (Primary key) là gì? “Khóa chính chứa một hoặc nhiều thuộc tính khóa” nghĩa là gì?
+	-dùng để định danh cho mỗi bảng. Nó dùng thể tham chiếu đến các mối quan hệ 1-n. 1bảng thường có 1 hay nhiều trường làm khóa chính. Biểu hiện của mối quan hệ 1-1 và 1-n
+
+8	Khóa ngoại (foreign key) là gì?
+	Khóa ngoại của bảng này có thể là khóa chính của bản khác(từ khóa chính của bảng mẹ). Một bảng có thể có nhiều khóa ngoại, mỗi khóa ngoại tách biệt. Biểu hiện của mối quan hệ n-1
+
+9	Phân biệt DELETE và TRUNCATE?
+	-Delete xóa từng dòng nhưng không xóa tăng tự động.
+	-Truncate xóa thông tin bảng và xóa tăng tự động
+10	Làm sao để truy vấn dữ liệu từ nhiều bảng?
+	nhóm bảng lại bằng join, mỗi bảng phải có mối quan hệ với nhau mới nhóm được, nếu ko có thì phải có bảng trung gian.
+
+11	Các loại JOIN? Phân biệt?
+	-Có 2 loại là Inner join và outter join. 
+	inner thì lấy phần chung.
+	outter join thì có left, right join. lấy phần bên trái hay bên phải của bảng gốc.Lấy cả phẩn ko có liên quan.
+
+12	Phân biệt AND và OR?
+	And là đúng tất cả thì true
+	or đúng 1 điều kiện thì true
+	
+13	Phân biệt GROUP BY và ORDER BY?
+	Order by dùng để sắp xếp tăng dần hay giảm dần. Mặc định là tăng dần. DESC ngược lại
+	Group by dùng để nhóm các kết quả dựa theo giá trị của các cột.
+
+14	Muốn nối chuỗi trong MySQL thì sử dụng gì?
+	Dùng concat, và concat_ws dùng để thêm 1 ký tự giữa các chữ muốn nối
+
+15	Yêu cầu tính điểm trung bình của tất cả các sinh viên thì làm thế nào?
+	select  avg(diem) from student
+
+16	Yêu cầu tính điểm trung bình của từng bạn sinh viên thì làm thế nào?
+	select name, avg(diem) from student
+
+17	Yêu cầu hiển thị tên sinh viên và điểm trung bình tương ứng, chỉ hiển thị các bạn có điểm trung bình lớn hơn 5 thì làm thế nào?
+	select name, avg(diem) from student where avg(diem) >5
+
+18	Hiển thị danh sách sinh viên và lớp học tương ứng thì làm thế nào (hai bảng Student và Class có cột chung ClassID)?
+	select name, class from student
+	join class on class.classId = student.classId
+
+19	Hiển thị danh sách sinh viên theo thứ tự tăng dần của điểm thi?
+	select name, diem from student order by diem 
+	
+20	Hiển thị danh sách sinh viên theo thứ tự giảm dần của họ tên, nếu họ tên trùng nhau thì sắp xếp theo tăng dần của tuổi?
+	select name from stundent 
+	where (order by name desc) and (order by age)
+
+21	Hiển thị các sinh viên có họ là ‘Le’ và tên là ‘Hai’?
+	select name from student where name ='hai' and ho='le'
+
+22	Hiển thị các sinh viên có tên bắt đầu là ‘C’?
+	select name from student where name like 'C%'
+
+23	Phân biệt JOIN và UNION?
+	-join lấy phần riêng, union ghép nhiều kết quả và loại bỏ trùng lặp
+
+24	Phân biệt UNION và UNION ALL?
+	union ghép nhiều kết quả và loại bỏ trùng lặp
+	union all ghép nhiều kết quả và lấy trùng lặp
+	
+25	Phân biệt EXIST và IN?
+	-Exist dùng để kiểm tra lệnh truy vấn con. Nếu lệnh truy vấn con trả về true thì sẽ có it nhất 1 dòng kết quả. Còn false thì ko có kết quả.
+	-in kiểm tra kết quả trong một nhóm hay tập hợp cố định
+
+26	Làm sao để có thể tăng tốc độ truy vấn?
+	dùng index để tăng tốc độ truy vấn
+	
+27	Các dạng tham số ở SP?
+	là một loại phương thức như bt
+
+28	Phân biệt SP, Trigger, Function?
+	-SP/funcion là thủ tục và có thể sử dụng lại nhiều lần.
+	-SP gọi funcion được nhưng ngược lại thì không
+	-Trigger là quá trình tự động thực thi hành các hàm thủ tục sau hoặc trước lệnh insert, update, delete
+
+Module 3 - JSP-Servlet
+1	CSS là gì? Các cách nhúng CSS vào tài liệu html? Độ ưu tiên?
+	CSS là biểu hiện bên ngoài của một thẻ html.
+	-Nhúng trực tiếp vào từng dòng hay vị trí của các thẻ html. Có thể dùng thẻ style để nhúng. Và dùng file .css để nhúng.
+
+2	Phân biệt giữa bộ chọn class và bộ chọn id?
+	-id dùng một lần.
+	-class dùng nhiều lần
+
+3	Trình bày mô hình hộp (box model) trong CSS?
+	-content nội dung
+	-border khung viền nội dung
+	-padding khoảng cách giữa content với border
+	-Margin khoảng cách giữa box model
+
+4	Trình bày thuộc tính float, clear?
+	
+
+5	Thuộc tính position dùng để làm gì? Phân biệt các giá trị: static, absolute, relative và fixed?"
+	Position là dùng để định vị một thẻ trong html
+	static vị trí mặc định
+	absolute vị trí so mới vị trí cha, vị trí cha ko được để static
+	relative vị trí so với vị trí ban đầu.
+	fixed là thành phần hiển thị cố định.
+
+6	Responsive Web Design là gì? 
+	Thiết kế trang web tương thích với mọi độ phân giải
+
+7	Làm thế nào để tạo 1 trang web responsive?
+	
+8	Bootstrap là gì?
+	
+
+9	Một số thành phần thông dụng ở Bootstrap?
+10	Phân biệt Static web và Dynamic web?
+11	Phân biệt 2 phương thức GET/POST
+12	Phân biệt request/response
+13	Phân biệt forward/redirect
+14	"JSP là gì? Nói: “Về bản chất JSP cũng chính là Servlet” đúng hay sai? Giải thích? So sánh giống và khác nhau giữa JSP và Servlet?
+15	JSTL là gì? Giới thiệu một số thẻ bạn đã sử dụng JSTL?
+16	Trình bày kiến trúc MVC? Vai trò của các thành phần trong kiến trúc MVC?
+17	Mô tả cách thực hiện tạo và lấy kết quả 1 câu query bất kỳ bằng JDBC?
+18	Sự giống, khác nhau và ưu nhược điểm của MVC1 & MVC2?
+19	Kỹ thuật sử dụng transaction bằng JDBC là như thế nào?
+20	Các tính chất của Transaction?
+21	Phương pháp gọi 1 SP ở JDBC?
+22	Phân biệt Ant, Maven, Gradle?

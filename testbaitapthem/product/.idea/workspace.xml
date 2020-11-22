@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="80c7f453-66a3-475f-b0d3-69382d960f82" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_FURAMA_3/webfurama/src/model/AttachService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_FURAMA_3/webfurama/src/model/Contract.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_FURAMA_3/webfurama/src/model/ContractDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_FURAMA_3/webfurama/src/model/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_FURAMA_3/webfurama/src/model/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_FURAMA_3/webfurama/src/model/Service.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_FURAMA_3/webfurama/src/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_FURAMA_3/webfurama/web/WEB-INF/images/bg-01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_FURAMA_3/webfurama/web/WEB-INF/images/icons/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_FURAMA_3/webfurama/web/WEB-INF/images/icons/icon-google.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_FURAMA_3/webfurama/web/WEB-INF/images/icons/map-marker.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_FURAMA_3/webfurama/web/WEB-INF/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_FURAMA_3/webfurama/web/WEB-INF/lib/javax.annotation.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_FURAMA_3/webfurama/web/WEB-INF/lib/javax.ejb.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_FURAMA_3/webfurama/web/WEB-INF/lib/javax.jms.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_FURAMA_3/webfurama/web/WEB-INF/lib/javax.persistence.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_FURAMA_3/webfurama/web/WEB-INF/lib/javax.resource.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_FURAMA_3/webfurama/web/WEB-INF/lib/javax.servlet.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_FURAMA_3/webfurama/web/WEB-INF/lib/javax.servlet.jsp.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_FURAMA_3/webfurama/web/WEB-INF/lib/javax.servlet.jsp.jstl.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_FURAMA_3/webfurama/web/WEB-INF/lib/javax.transaction.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_FURAMA_3/webfurama/web/WEB-INF/lib/jstl-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_FURAMA_3/webfurama/web/WEB-INF/lib/mysql-connector-java-8.0.17.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../13 trancsation/bt/.ideaDataSources/e5fd5406-98cb-4c5c-984d-5fc3d280aee9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../13 trancsation/bt/.ideaDataSources/e5fd5406-98cb-4c5c-984d-5fc3d280aee9.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../13 trancsation/bt/bt.iws" beforeDir="false" afterPath="$PROJECT_DIR$/../../13 trancsation/bt/bt.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../13 trancsation/bt/out/artifacts/bt_war_exploded/WEB-INF/classes/controller/StudentServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../13 trancsation/bt/out/artifacts/bt_war_exploded/WEB-INF/classes/controller/StudentServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../13 trancsation/bt/out/artifacts/bt_war_exploded/student/create.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../13 trancsation/bt/out/artifacts/bt_war_exploded/student/create.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../13 trancsation/bt/out/artifacts/bt_war_exploded/student/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../13 trancsation/bt/out/artifacts/bt_war_exploded/student/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../13 trancsation/bt/out/production/bt/controller/StudentServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../13 trancsation/bt/out/production/bt/controller/StudentServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../13 trancsation/bt/web/student/create.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../13 trancsation/bt/web/student/create.jsp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1kCQsOMINH8MKpHnJxC9hHLn1m0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="80c7f453-66a3-475f-b0d3-69382d960f82" name="Default Changelist" comment="" />
+      <created>1605202299928</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1605202299928</updated>
+      <workItem from="1605202301228" duration="27000" />
+      <workItem from="1605202365688" duration="6000" />
+    </task>
+    <servers />
+  </component>
+</project>

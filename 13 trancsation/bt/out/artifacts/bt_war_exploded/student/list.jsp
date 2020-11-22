@@ -202,31 +202,31 @@
         </button>
         <%--        <a href="/users?action=create" role="button" class="btn btn-outline-dark">Create New User</a>--%>
     </div>
-<%--    <div class="col-md-4">--%>
-<%--        <form class="form-inline" action="/student">--%>
-<%--            <div class="form-group">--%>
-<%--                <select class="form-control" name="findBy">--%>
-<%--                    <option value="byId">Id</option>--%>
-<%--                    <option value="byName">Name</option>--%>
+    <div class="col-md-4">
+        <form class="form-inline" action="/student">
+            <div class="form-group">
+                <select class="form-control" name="findBy">
+                    <option value="byId">Id</option>
+                    <option value="byName">Name</option>
 
-<%--                </select>--%>
-<%--            </div>--%>
-<%--            <input class="form-control mr-3" type="text" placeholder="Search" aria-label="Search" name="search">--%>
-<%--            <input type="submit" value="search" name="action" class="btn btn-outline-dark">--%>
-<%--        </form>--%>
-<%--    </div>--%>
-<%--    <div class="col-md-2">--%>
-<%--        <form class="form-inline" action="/student">--%>
-<%--            <label for="sortBy">Sort By: </label>--%>
-<%--            <div class="form-group">--%>
-<%--                <select class="form-control" name="sortBy" id="sortBy">--%>
-<%--                    <option value="sortId">Id</option>--%>
-<%--                    <option value="sortName">Name</option>--%>
-<%--                </select>--%>
-<%--            </div>--%>
-<%--            <input type="submit" value="sort" name="action" class="btn btn-outline-dark">--%>
-<%--        </form>--%>
-<%--    </div>--%>
+                </select>
+            </div>
+            <input class="form-control mr-3" type="text" placeholder="Search" aria-label="Search" name="search">
+            <input type="submit" value="search" name="action" class="btn btn-outline-dark">
+        </form>
+    </div>
+    <div class="col-md-2">
+        <form class="form-inline" action="/student">
+            <label for="sortBy">Sort By: </label>
+            <div class="form-group">
+                <select class="form-control" name="sortBy" id="sortBy">
+                    <option value="sortId">Id</option>
+                    <option value="sortName">Name</option>
+                </select>
+            </div>
+            <input type="submit" value="sort" name="action" class="btn btn-outline-dark">
+        </form>
+    </div>
 
 </div>
 <div style="margin: 20px">

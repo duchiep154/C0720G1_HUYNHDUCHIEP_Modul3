@@ -1,0 +1,54 @@
+Module 3 - Database
+1	Phân biệt các câu lệnh DML & DDL? DML, DDL bao gồm các câu lệnh nào?
+2	Cơ sở dữ liệu (database) là gì?
+3	Trình bày về mô hình thực thể mối quan hệ (ERD - Entity-Relationship Diagram)? Trong mô hình thực thể mối quan hệ có những thành phần nào?
+4	Các bước chuyển đổi từ ERD -> Table?
+5	Các bước chuẩn hóa dữ liệu?
+6	Ràng buộc (constraint) là gì? Các loại ràng buộc trong MySQL?
+7	Khóa chính (Primary key) là gì? “Khóa chính chứa một hoặc nhiều thuộc tính khóa” nghĩa là gì?
+8	Khóa ngoại (foreign key) là gì?
+9	Phân biệt DELETE và TRUNCATE?
+10	Làm sao để truy vấn dữ liệu từ nhiều bảng?
+11	Các loại JOIN? Phân biệt?
+12	Phân biệt AND và OR?
+13	Phân biệt GROUP BY và ORDER BY?
+14	Muốn nối chuỗi trong MySQL thì sử dụng gì?
+15	Yêu cầu tính điểm trung bình của tất cả các sinh viên thì làm thế nào?
+16	Yêu cầu tính điểm trung bình của từng bạn sinh viên thì làm thế nào?
+17	Yêu cầu hiển thị tên sinh viên và điểm trung bình tương ứng, chỉ hiển thị các bạn có điểm trung bình lớn hơn 5 thì làm thế nào?
+18	Hiển thị danh sách sinh viên và lớp học tương ứng thì làm thế nào (hai bảng Student và Class có cột chung ClassID)?
+19	Hiển thị danh sách sinh viên theo thứ tự tăng dần của điểm thi?
+20	Hiển thị danh sách sinh viên theo thứ tự giảm dần của họ tên, nếu họ tên trùng nhau thì sắp xếp theo tăng dần của tuổi?
+21	Hiển thị các sinh viên có họ là ‘Le’ và tên là ‘Hai’?
+22	Hiển thị các sinh viên có tên bắt đầu là ‘C’?
+23	Phân biệt JOIN và UNION?
+24	Phân biệt UNION và UNION ALL?
+25	Phân biệt EXIST và IN?
+26	Làm sao để có thể tăng tốc độ truy vấn?
+27	Các dạng tham số ở SP?
+28	Phân biệt SP, Trigger, Function?
+
+Module 3 - JSP-Servlet
+1	CSS là gì? Các cách nhúng CSS vào tài liệu html? Độ ưu tiên?
+2	Phân biệt giữa bộ chọn class và bộ chọn id?
+3	Trình bày mô hình hộp (box model) trong CSS?
+4	Trình bày thuộc tính float, clear?
+5	Thuộc tính position dùng để làm gì?
+Phân biệt các giá trị: static, absolute, relative và fixed?"
+6	Responsive Web Design là gì? 
+7	Làm thế nào để tạo 1 trang web responsive?
+8	Bootstrap là gì?
+9	Một số thành phần thông dụng ở Bootstrap?
+10	Phân biệt Static web và Dynamic web?
+11	Phân biệt 2 phương thức GET/POST
+12	Phân biệt request/response
+13	Phân biệt forward/redirect
+14	"JSP là gì? Nói: “Về bản chất JSP cũng chính là Servlet” đúng hay sai? Giải thích? So sánh giống và khác nhau giữa JSP và Servlet?
+15	JSTL là gì? Giới thiệu một số thẻ bạn đã sử dụng JSTL?
+16	Trình bày kiến trúc MVC? Vai trò của các thành phần trong kiến trúc MVC?
+17	Mô tả cách thực hiện tạo và lấy kết quả 1 câu query bất kỳ bằng JDBC?
+18	Sự giống, khác nhau và ưu nhược điểm của MVC1 & MVC2?
+19	Kỹ thuật sử dụng transaction bằng JDBC là như thế nào?
+20	Các tính chất của Transaction?
+21	Phương pháp gọi 1 SP ở JDBC?
+22	Phân biệt Ant, Maven, Gradle?

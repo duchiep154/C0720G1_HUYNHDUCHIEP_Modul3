@@ -10,13 +10,13 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
 <head>
-    <title>User Management Application</title>
+    <title>student Management Application</title>
 </head>
 <body>
 <center>
-    <h1>User Management</h1>
+    <h1>stdent Management</h1>
     <h2>
-        <a href="student?action=users">List All student</a>
+        <a href="/student">List All student</a>
     </h2>
 </center>
 <div align="center">
